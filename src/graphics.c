@@ -40,7 +40,18 @@ void printEntityList(entity *entityList, int sizeOfList)
 	{
 		if(entityList[mainLooper].dead != TRUE)
 		{
-			printEntity(&entityList[mainLooper], PAIR_DEFAULT);
+			switch(entityList[mainLooper].entityType)
+			{
+				case TYPE_ZOMBIE:
+					printEntity(&entityList[mainLooper], PAIR_DEFAULT);
+				break;
+				case TYPE_PIT:
+					printEntity(&entityList[mainLooper], PAIR_PIT);
+				break;
+				default;
+				
+			}
+			
 		}
 	}
 	

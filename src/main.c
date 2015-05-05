@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		while(allDead == 0)
 		{
 			
-			printUI(playerPoints, waveNumber, PAIR_DEFAULT);
+			printUI(playerPoints, waveNumber, PAIR_PLAYER);
 			handleInput(&player);
 			clearScreen();
 			printEntity(&player, PAIR_DEFAULT);

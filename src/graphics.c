@@ -9,6 +9,8 @@ void initGraphics()
 	noecho();
 	cbreak();
 	init_pair(PAIR_DEFAULT, COLOR_GREEN, COLOR_BLACK);
+	init_pair(PAIR_PLAYER, COLOR_WHITE, COLOR_BLACK);
+	init_pair(PAIR_PIT, COLOR_CYAN, COLOR_BLACK);
 	
 }
 

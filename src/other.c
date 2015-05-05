@@ -143,6 +143,7 @@ mainLooper].dead != TRUE && pits[internalLooper].dead != TRUE)
 
 void deinit(int points, int waveNumber)
 {
+	echo();
 	clearScreen();
 	FILE *leaderboardFile = fopen("Leaderboards.txt", "a");
 	char *playerName;
@@ -151,6 +152,6 @@ void deinit(int points, int waveNumber)
 	fprintf(leaderboardFile, "%s : Scored %d Points and Survived %d Rounds\n", playerName, points, (waveNumber - 1));
 	fclose(leaderboardFile);
 	printw("Thank You for playing ZOMBIES!!!!");
-	
+	noecho();
 	
 }

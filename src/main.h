@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <pdcurses\curses.h>
 #include <stdio.h>
-const static unsigned char TYPE_PLAYER = 1;
-const static unsigned char TYPE_PIT = 2;
-const static unsigned char TYPE_ZOMBIE = 3;
+const static unsigned int TYPE_PLAYER = 1;
+const static unsigned int TYPE_PIT = 2;
+const static unsigned int TYPE_ZOMBIE = 3;
 const static unsigned char PAIR_DEFAULT = 1;
 const static unsigned char PAIR_PLAYER = 2;
 const static unsigned char PAIR_PIT = 3;
@@ -28,6 +28,6 @@ typedef struct
 {
 	char representScreen;
 	vectorData position;
-	unsigned char entityType;
+	unsigned int entityType;
 	unsigned char dead;
 }entity;

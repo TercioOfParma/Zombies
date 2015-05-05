@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 			printUI(playerPoints, waveNumber, PAIR_PLAYER);
 			handleInput(&player);
 			clearScreen();
-			printEntity(&player, PAIR_DEFAULT);
+			printEntity(&player, PAIR_PLAYER);
 			zombiesThink(enemies, waveNumber, player);
 			printEntityList(enemies, (GEOMETRIC_PROGRESSION * STARTING_ZOMBIES * waveNumber));
 			printEntityList(pits, (GEOMETRIC_PROGRESSION * STARTING_PITS * waveNumber));
@@ -38,12 +38,14 @@ int main(int argc, char *argv[])
 		}
 		if(allDead == 2)
 		{
+			getch();
 			free(pits);
 			free(enemies);
 			deinit(playerPoints, waveNumber);
 			getch();
 			exit(0);
 		}
+		clearScreen();
 		allDead = 0;
 		waveNumber++;
 		free(pits);

@@ -42,17 +42,17 @@ void printEntityList(entity *entityList, int sizeOfList)
 	{
 		if(entityList[mainLooper].dead != TRUE)
 		{
-			switch(entityList[mainLooper].entityType)
+			
+			if(entityList[mainLooper].entityType == TYPE_ZOMBIE)
 			{
-				case TYPE_ZOMBIE:
-					printEntity(&entityList[mainLooper], PAIR_DEFAULT);
-				break;
-				case TYPE_PIT:
-					printEntity(&entityList[mainLooper], PAIR_PIT);
-				break;
-				default;
-				
+				printEntity(&entityList[mainLooper], PAIR_DEFAULT);
 			}
+			else if(entityList[mainLooper].entityType == TYPE_PIT)
+			{
+				printEntity(&entityList[mainLooper], PAIR_PIT);
+			}	
+				
+			
 			
 		}
 	}
@@ -64,6 +64,7 @@ void printUI(int pointNumber, int waveNumber, int colorPair)
 {
 	attron(COLOR_PAIR(colorPair));
 	mvprintw(TOP_LEFT_Y, TOP_LEFT_X, "Points : %d \t Wave Number : %d", pointNumber, waveNumber);
+	mvprintw(TOP_LEFT_Y+1,TOP_LEFT_X,"Press Q to quit, arrows and numpad on moves");
 	attroff(COLOR_PAIR(colorPair));
 	
 	

@@ -21,7 +21,7 @@ void initPlayer(entity *playerChar)
 	playerChar->position.xPos = 10;
 	playerChar->position.yPos = 10;
 	playerChar->dead = FALSE;
-	printEntity(playerChar, PAIR_DEFAULT);
+	printEntity(playerChar, PAIR_PLAYER);
 	
 }
 
@@ -53,7 +53,7 @@ entity *initPits(entity *pits, int waveNumber)
 			pits[mainLooper].position.xPos = rand() % WIN_SIZE_X;
 			pits[mainLooper].position.yPos = rand() % WIN_SIZE_Y;
 			pits[mainLooper].dead = FALSE;
-			printEntity(&pits[mainLooper], PAIR_DEFAULT);
+			printEntity(&pits[mainLooper], PAIR_PIT);
 		}
 	return pits;
 }

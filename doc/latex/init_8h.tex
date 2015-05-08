@@ -1,0 +1,83 @@
+\hypertarget{init_8h}{}\section{C\+:/\+Users/elliot/programming/\+Zombies/init.h File Reference}
+\label{init_8h}\index{C\+:/\+Users/elliot/programming/\+Zombies/init.\+h@{C\+:/\+Users/elliot/programming/\+Zombies/init.\+h}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{init_8h_a485987dc3e8bd1d60b9f6aa830278190}{init\+Game} (\hyperlink{structentity}{entity} $\ast$player\+Char, \hyperlink{structentity}{entity} $\ast$zombie\+Char, \hyperlink{structentity}{entity} $\ast$pits, int $\ast$map, int wave\+Number)
+\begin{DoxyCompactList}\small\item\em Generates the next wave of the game, resets variables in the required places T\+O\+D\+O map. \end{DoxyCompactList}\item 
+\hyperlink{structentity}{entity} $\ast$ \hyperlink{init_8h_ab544a3b33ca1944877134bb9bef50b9e}{init\+Pits} (\hyperlink{structentity}{entity} $\ast$pits, int wave\+Number)
+\begin{DoxyCompactList}\small\item\em Sets the pits equal to a random position in a similar way to init\+Zombies. \end{DoxyCompactList}\item 
+void \hyperlink{init_8h_aed867aa1faf97b8e47fe703462e7aea3}{init\+Player} (\hyperlink{structentity}{entity} $\ast$player\+Char)
+\begin{DoxyCompactList}\small\item\em Sets the player to a predetermined position at the beginning of the game and makes all of the other variables equal what they should by default. \end{DoxyCompactList}\item 
+\hyperlink{structentity}{entity} $\ast$ \hyperlink{init_8h_aa451743e8102f7b3433c7de2b8555420}{init\+Zombies} (\hyperlink{structentity}{entity} $\ast$zombie\+Char, int wave\+Number)
+\begin{DoxyCompactList}\small\item\em Sets the zombies equal to a random position and generates each zombie in sequence. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{init_8h_a485987dc3e8bd1d60b9f6aa830278190}{}\index{init.\+h@{init.\+h}!init\+Game@{init\+Game}}
+\index{init\+Game@{init\+Game}!init.\+h@{init.\+h}}
+\subsubsection[{init\+Game}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Game (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{player\+Char, }
+\item[{{\bf entity} $\ast$}]{zombie\+Char, }
+\item[{{\bf entity} $\ast$}]{pits, }
+\item[{int $\ast$}]{map, }
+\item[{int}]{wave\+Number}
+\end{DoxyParamCaption}
+)}\label{init_8h_a485987dc3e8bd1d60b9f6aa830278190}
+
+
+Generates the next wave of the game, resets variables in the required places T\+O\+D\+O map. 
+
+
+
+Definition at line 4 of file init.\+c.
+
+\hypertarget{init_8h_ab544a3b33ca1944877134bb9bef50b9e}{}\index{init.\+h@{init.\+h}!init\+Pits@{init\+Pits}}
+\index{init\+Pits@{init\+Pits}!init.\+h@{init.\+h}}
+\subsubsection[{init\+Pits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf entity}$\ast$ init\+Pits (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{pits, }
+\item[{int}]{wave\+Number}
+\end{DoxyParamCaption}
+)}\label{init_8h_ab544a3b33ca1944877134bb9bef50b9e}
+
+
+Sets the pits equal to a random position in a similar way to init\+Zombies. 
+
+
+
+Definition at line 44 of file init.\+c.
+
+\hypertarget{init_8h_aed867aa1faf97b8e47fe703462e7aea3}{}\index{init.\+h@{init.\+h}!init\+Player@{init\+Player}}
+\index{init\+Player@{init\+Player}!init.\+h@{init.\+h}}
+\subsubsection[{init\+Player}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Player (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{player\+Char}
+\end{DoxyParamCaption}
+)}\label{init_8h_aed867aa1faf97b8e47fe703462e7aea3}
+
+
+Sets the player to a predetermined position at the beginning of the game and makes all of the other variables equal what they should by default. 
+
+
+
+Definition at line 17 of file init.\+c.
+
+\hypertarget{init_8h_aa451743e8102f7b3433c7de2b8555420}{}\index{init.\+h@{init.\+h}!init\+Zombies@{init\+Zombies}}
+\index{init\+Zombies@{init\+Zombies}!init.\+h@{init.\+h}}
+\subsubsection[{init\+Zombies}]{\setlength{\rightskip}{0pt plus 5cm}{\bf entity}$\ast$ init\+Zombies (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{zombie\+Char, }
+\item[{int}]{wave\+Number}
+\end{DoxyParamCaption}
+)}\label{init_8h_aa451743e8102f7b3433c7de2b8555420}
+
+
+Sets the zombies equal to a random position and generates each zombie in sequence. 
+
+
+
+Definition at line 28 of file init.\+c.
+

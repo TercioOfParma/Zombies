@@ -1,0 +1,85 @@
+\hypertarget{other_8h}{}\section{C\+:/\+Users/elliot/programming/\+Zombies/other.h File Reference}
+\label{other_8h}\index{C\+:/\+Users/elliot/programming/\+Zombies/other.\+h@{C\+:/\+Users/elliot/programming/\+Zombies/other.\+h}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{other_8h_a84c898bf402e99887b0325c915554adc}{check\+Collision} (\hyperlink{structentity}{entity} $\ast$zombies, \hyperlink{structentity}{entity} $\ast$pits, \hyperlink{structentity}{entity} player, int wave\+Number, int $\ast$points, int $\ast$is\+Over)
+\begin{DoxyCompactList}\small\item\em Handles collision, adds to the points of the players, and also tells if the zombies are dead or players are dead. \end{DoxyCompactList}\item 
+void \hyperlink{other_8h_adcfb75a3eae43b3018dbc2283d5821fc}{deinit} (int points, int wave\+Number)
+\begin{DoxyCompactList}\small\item\em Handles game over as well as writing the users score to a pseudo leaderboard. \end{DoxyCompactList}\item 
+void \hyperlink{other_8h_a680b76297203d1ae382b9f40d966f513}{handle\+Input} (\hyperlink{structentity}{entity} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Takes in the players character, and takes input and acts on that At the moment it is quitting and moving around , as well as placing a space where it was if it is moving. \end{DoxyCompactList}\item 
+void \hyperlink{other_8h_a8712ed13cbedfb0f66c4a2aae61d7be0}{zombies\+Think} (\hyperlink{structentity}{entity} $\ast$zombies, int wave\+Number, \hyperlink{structentity}{entity} player)
+\begin{DoxyCompactList}\small\item\em A\+I for the zombies, zombies more relative to the player\textquotesingle{}s position in a predictable fashion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{other_8h_a84c898bf402e99887b0325c915554adc}{}\index{other.\+h@{other.\+h}!check\+Collision@{check\+Collision}}
+\index{check\+Collision@{check\+Collision}!other.\+h@{other.\+h}}
+\subsubsection[{check\+Collision}]{\setlength{\rightskip}{0pt plus 5cm}void check\+Collision (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{zombies, }
+\item[{{\bf entity} $\ast$}]{pits, }
+\item[{{\bf entity}}]{player, }
+\item[{int}]{wave\+Number, }
+\item[{int $\ast$}]{points, }
+\item[{int $\ast$}]{is\+Over}
+\end{DoxyParamCaption}
+)}\label{other_8h_a84c898bf402e99887b0325c915554adc}
+
+
+Handles collision, adds to the points of the players, and also tells if the zombies are dead or players are dead. 
+
+
+
+Definition at line 99 of file other.\+c.
+
+\hypertarget{other_8h_adcfb75a3eae43b3018dbc2283d5821fc}{}\index{other.\+h@{other.\+h}!deinit@{deinit}}
+\index{deinit@{deinit}!other.\+h@{other.\+h}}
+\subsubsection[{deinit}]{\setlength{\rightskip}{0pt plus 5cm}void deinit (
+\begin{DoxyParamCaption}
+\item[{int}]{points, }
+\item[{int}]{wave\+Number}
+\end{DoxyParamCaption}
+)}\label{other_8h_adcfb75a3eae43b3018dbc2283d5821fc}
+
+
+Handles game over as well as writing the users score to a pseudo leaderboard. 
+
+
+
+Definition at line 143 of file other.\+c.
+
+\hypertarget{other_8h_a680b76297203d1ae382b9f40d966f513}{}\index{other.\+h@{other.\+h}!handle\+Input@{handle\+Input}}
+\index{handle\+Input@{handle\+Input}!other.\+h@{other.\+h}}
+\subsubsection[{handle\+Input}]{\setlength{\rightskip}{0pt plus 5cm}void handle\+Input (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{player}
+\end{DoxyParamCaption}
+)}\label{other_8h_a680b76297203d1ae382b9f40d966f513}
+
+
+Takes in the players character, and takes input and acts on that At the moment it is quitting and moving around , as well as placing a space where it was if it is moving. 
+
+
+
+Definition at line 5 of file other.\+c.
+
+\hypertarget{other_8h_a8712ed13cbedfb0f66c4a2aae61d7be0}{}\index{other.\+h@{other.\+h}!zombies\+Think@{zombies\+Think}}
+\index{zombies\+Think@{zombies\+Think}!other.\+h@{other.\+h}}
+\subsubsection[{zombies\+Think}]{\setlength{\rightskip}{0pt plus 5cm}void zombies\+Think (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{zombies, }
+\item[{int}]{wave\+Number, }
+\item[{{\bf entity}}]{player}
+\end{DoxyParamCaption}
+)}\label{other_8h_a8712ed13cbedfb0f66c4a2aae61d7be0}
+
+
+A\+I for the zombies, zombies more relative to the player\textquotesingle{}s position in a predictable fashion. 
+
+
+
+Definition at line 60 of file other.\+c.
+

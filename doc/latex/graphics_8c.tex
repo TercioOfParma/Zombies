@@ -1,0 +1,93 @@
+\hypertarget{graphics_8c}{}\section{C\+:/\+Users/elliot/programming/\+Zombies/graphics.c File Reference}
+\label{graphics_8c}\index{C\+:/\+Users/elliot/programming/\+Zombies/graphics.\+c@{C\+:/\+Users/elliot/programming/\+Zombies/graphics.\+c}}
+{\ttfamily \#include \char`\"{}graphics.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{graphics_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{clear\+Screen} ()
+\item 
+void \hyperlink{graphics_8c_a523a6a02639de0b9e57428d1ef667d34}{init\+Graphics} ()
+\item 
+void \hyperlink{graphics_8c_a5eedf3abdc7f81afa66fc94c9fe1c65a}{print\+Entity} (\hyperlink{structentity}{entity} $\ast$entity\+Pointer, int color\+Pair)
+\item 
+void \hyperlink{graphics_8c_a429718c9ad09f817060d804f9cf4c6bd}{print\+Entity\+List} (\hyperlink{structentity}{entity} $\ast$entity\+List, int size\+Of\+List)
+\item 
+void \hyperlink{graphics_8c_aeadfab09c44a275c1e3642013475ad2d}{print\+Message} (int colour\+Pair, \hyperlink{structvector_data}{vector\+Data} coords, char $\ast$message)
+\item 
+void \hyperlink{graphics_8c_aed3bf9394d14bcd58387feca6dab11db}{print\+U\+I} (int point\+Number, int wave\+Number, int color\+Pair)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{graphics_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}{}\index{graphics.\+c@{graphics.\+c}!clear\+Screen@{clear\+Screen}}
+\index{clear\+Screen@{clear\+Screen}!graphics.\+c@{graphics.\+c}}
+\subsubsection[{clear\+Screen}]{\setlength{\rightskip}{0pt plus 5cm}void clear\+Screen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{graphics_8c_a9d7e8af417b6d543da691e9c0e2f6f9f}
+Prints blank characters across the screen 
+
+Definition at line 72 of file graphics.\+c.
+
+\hypertarget{graphics_8c_a523a6a02639de0b9e57428d1ef667d34}{}\index{graphics.\+c@{graphics.\+c}!init\+Graphics@{init\+Graphics}}
+\index{init\+Graphics@{init\+Graphics}!graphics.\+c@{graphics.\+c}}
+\subsubsection[{init\+Graphics}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Graphics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{graphics_8c_a523a6a02639de0b9e57428d1ef667d34}
+$<$ I\+N\+C\+L\+U\+D\+E\+\_\+\+L\+O\+C\+K \+: This makes sure that the compiler doesn\textquotesingle{}t include the files multiple times This initialises pd\+Curses to use colour, standard screen, not to echo and to use standard interrupts (C\+T\+R\+L$^\wedge$\+C etc) 
+
+Definition at line 4 of file graphics.\+c.
+
+\hypertarget{graphics_8c_a5eedf3abdc7f81afa66fc94c9fe1c65a}{}\index{graphics.\+c@{graphics.\+c}!print\+Entity@{print\+Entity}}
+\index{print\+Entity@{print\+Entity}!graphics.\+c@{graphics.\+c}}
+\subsubsection[{print\+Entity}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Entity (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{entity\+Pointer, }
+\item[{int}]{color\+Pair}
+\end{DoxyParamCaption}
+)}\label{graphics_8c_a5eedf3abdc7f81afa66fc94c9fe1c65a}
+prints out a character at its coords with given colour pair 
+
+Definition at line 25 of file graphics.\+c.
+
+\hypertarget{graphics_8c_a429718c9ad09f817060d804f9cf4c6bd}{}\index{graphics.\+c@{graphics.\+c}!print\+Entity\+List@{print\+Entity\+List}}
+\index{print\+Entity\+List@{print\+Entity\+List}!graphics.\+c@{graphics.\+c}}
+\subsubsection[{print\+Entity\+List}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Entity\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{entity\+List, }
+\item[{int}]{size\+Of\+List}
+\end{DoxyParamCaption}
+)}\label{graphics_8c_a429718c9ad09f817060d804f9cf4c6bd}
+A helper function to print out s list of entities from a 1 dimensional pointer array based on their set type 
+
+Definition at line 38 of file graphics.\+c.
+
+\hypertarget{graphics_8c_aeadfab09c44a275c1e3642013475ad2d}{}\index{graphics.\+c@{graphics.\+c}!print\+Message@{print\+Message}}
+\index{print\+Message@{print\+Message}!graphics.\+c@{graphics.\+c}}
+\subsubsection[{print\+Message}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Message (
+\begin{DoxyParamCaption}
+\item[{int}]{colour\+Pair, }
+\item[{{\bf vector\+Data}}]{coords, }
+\item[{char $\ast$}]{Message}
+\end{DoxyParamCaption}
+)}\label{graphics_8c_aeadfab09c44a275c1e3642013475ad2d}
+takes a message, and prints it at the desired coordinates (in coords) and with the desired colour pair 
+
+Definition at line 17 of file graphics.\+c.
+
+\hypertarget{graphics_8c_aed3bf9394d14bcd58387feca6dab11db}{}\index{graphics.\+c@{graphics.\+c}!print\+U\+I@{print\+U\+I}}
+\index{print\+U\+I@{print\+U\+I}!graphics.\+c@{graphics.\+c}}
+\subsubsection[{print\+U\+I}]{\setlength{\rightskip}{0pt plus 5cm}void print\+U\+I (
+\begin{DoxyParamCaption}
+\item[{int}]{point\+Number, }
+\item[{int}]{wave\+Number, }
+\item[{int}]{color\+Pair}
+\end{DoxyParamCaption}
+)}\label{graphics_8c_aed3bf9394d14bcd58387feca6dab11db}
+Prints out the wave number, controls, and points in a user understandable manner 
+
+Definition at line 63 of file graphics.\+c.
+

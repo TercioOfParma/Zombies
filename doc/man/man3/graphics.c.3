@@ -1,0 +1,62 @@
+.TH "C:/Users/elliot/programming/Zombies/graphics.c" 3 "Fri May 8 2015" "Version 0.001" "Zombies" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/elliot/programming/Zombies/graphics.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'graphics\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBclearScreen\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitGraphics\fP ()"
+.br
+.ti -1c
+.RI "void \fBprintEntity\fP (\fBentity\fP *entityPointer, int colorPair)"
+.br
+.ti -1c
+.RI "void \fBprintEntityList\fP (\fBentity\fP *entityList, int sizeOfList)"
+.br
+.ti -1c
+.RI "void \fBprintMessage\fP (int colourPair, \fBvectorData\fP coords, char *message)"
+.br
+.ti -1c
+.RI "void \fBprintUI\fP (int pointNumber, int waveNumber, int colorPair)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void clearScreen ()"
+Prints blank characters across the screen 
+.PP
+Definition at line 72 of file graphics\&.c\&.
+.SS "void initGraphics ()"
+< INCLUDE_LOCK : This makes sure that the compiler doesn't include the files multiple times This initialises pdCurses to use colour, standard screen, not to echo and to use standard interrupts (CTRL^C etc) 
+.PP
+Definition at line 4 of file graphics\&.c\&.
+.SS "void printEntity (\fBentity\fP * entityPointer, int colorPair)"
+prints out a character at its coords with given colour pair 
+.PP
+Definition at line 25 of file graphics\&.c\&.
+.SS "void printEntityList (\fBentity\fP * entityList, int sizeOfList)"
+A helper function to print out s list of entities from a 1 dimensional pointer array based on their set type 
+.PP
+Definition at line 38 of file graphics\&.c\&.
+.SS "void printMessage (int colourPair, \fBvectorData\fP coords, char * Message)"
+takes a message, and prints it at the desired coordinates (in coords) and with the desired colour pair 
+.PP
+Definition at line 17 of file graphics\&.c\&.
+.SS "void printUI (int pointNumber, int waveNumber, int colorPair)"
+Prints out the wave number, controls, and points in a user understandable manner 
+.PP
+Definition at line 63 of file graphics\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zombies from the source code\&.

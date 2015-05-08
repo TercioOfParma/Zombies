@@ -1,0 +1,60 @@
+.TH "C:/Users/elliot/programming/Zombies/other.c" 3 "Fri May 8 2015" "Version 0.001" "Zombies" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/elliot/programming/Zombies/other.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'other\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcheckCollision\fP (\fBentity\fP *zombies, \fBentity\fP *pits, \fBentity\fP player, int waveNumber, int *points, int *isOver)"
+.br
+.RI "\fIHandles collision, adds to the points of the players, and also tells if the zombies are dead or players are dead\&. \fP"
+.ti -1c
+.RI "void \fBdeinit\fP (int points, int waveNumber)"
+.br
+.RI "\fIHandles game over as well as writing the users score to a pseudo leaderboard\&. \fP"
+.ti -1c
+.RI "void \fBhandleInput\fP (\fBentity\fP *player)"
+.br
+.RI "\fITakes in the players character, and takes input and acts on that At the moment it is quitting and moving around , as well as placing a space where it was if it is moving\&. \fP"
+.ti -1c
+.RI "void \fBzombiesThink\fP (\fBentity\fP *zombies, int waveNumber, \fBentity\fP player)"
+.br
+.RI "\fIAI for the zombies, zombies more relative to the player's position in a predictable fashion\&. \fP"
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void checkCollision (\fBentity\fP * zombies, \fBentity\fP * pits, \fBentity\fP player, int waveNumber, int * points, int * isOver)"
+
+.PP
+Handles collision, adds to the points of the players, and also tells if the zombies are dead or players are dead\&. 
+.PP
+Definition at line 99 of file other\&.c\&.
+.SS "void deinit (int points, int waveNumber)"
+
+.PP
+Handles game over as well as writing the users score to a pseudo leaderboard\&. 
+.PP
+Definition at line 143 of file other\&.c\&.
+.SS "void handleInput (\fBentity\fP * player)"
+
+.PP
+Takes in the players character, and takes input and acts on that At the moment it is quitting and moving around , as well as placing a space where it was if it is moving\&. 
+.PP
+Definition at line 5 of file other\&.c\&.
+.SS "void zombiesThink (\fBentity\fP * zombies, int waveNumber, \fBentity\fP player)"
+
+.PP
+AI for the zombies, zombies more relative to the player's position in a predictable fashion\&. 
+.PP
+Definition at line 60 of file other\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zombies from the source code\&.

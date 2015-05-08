@@ -1,0 +1,60 @@
+.TH "C:/Users/elliot/programming/Zombies/init.h" 3 "Fri May 8 2015" "Version 0.001" "Zombies" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/elliot/programming/Zombies/init.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitGame\fP (\fBentity\fP *playerChar, \fBentity\fP *zombieChar, \fBentity\fP *pits, int *map, int waveNumber)"
+.br
+.RI "\fIGenerates the next wave of the game, resets variables in the required places TODO map\&. \fP"
+.ti -1c
+.RI "\fBentity\fP * \fBinitPits\fP (\fBentity\fP *pits, int waveNumber)"
+.br
+.RI "\fISets the pits equal to a random position in a similar way to initZombies\&. \fP"
+.ti -1c
+.RI "void \fBinitPlayer\fP (\fBentity\fP *playerChar)"
+.br
+.RI "\fISets the player to a predetermined position at the beginning of the game and makes all of the other variables equal what they should by default\&. \fP"
+.ti -1c
+.RI "\fBentity\fP * \fBinitZombies\fP (\fBentity\fP *zombieChar, int waveNumber)"
+.br
+.RI "\fISets the zombies equal to a random position and generates each zombie in sequence\&. \fP"
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void initGame (\fBentity\fP * playerChar, \fBentity\fP * zombieChar, \fBentity\fP * pits, int * map, int waveNumber)"
+
+.PP
+Generates the next wave of the game, resets variables in the required places TODO map\&. 
+.PP
+Definition at line 4 of file init\&.c\&.
+.SS "\fBentity\fP* initPits (\fBentity\fP * pits, int waveNumber)"
+
+.PP
+Sets the pits equal to a random position in a similar way to initZombies\&. 
+.PP
+Definition at line 44 of file init\&.c\&.
+.SS "void initPlayer (\fBentity\fP * playerChar)"
+
+.PP
+Sets the player to a predetermined position at the beginning of the game and makes all of the other variables equal what they should by default\&. 
+.PP
+Definition at line 17 of file init\&.c\&.
+.SS "\fBentity\fP* initZombies (\fBentity\fP * zombieChar, int waveNumber)"
+
+.PP
+Sets the zombies equal to a random position and generates each zombie in sequence\&. 
+.PP
+Definition at line 28 of file init\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Zombies from the source code\&.
